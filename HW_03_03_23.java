@@ -6,9 +6,9 @@ public class HW_03_03_23 {
     public static void main(String[] args) {
         ArrayList<Integer> list1 = new ArrayList<>(List.of(1, 2, 4, 6, 7));
         ArrayList<Integer> list2 = new ArrayList<>(List.of(1, 3, 4));
-        ArrayList<Integer> list3 = new ArrayList<>(List.of(11, 2, 91, 5, 8, 9, 11, 48, 12));
+        ArrayList<Integer> list3 = new ArrayList<>(List.of(1, 2, 4, 6, 7, 47, 53, 3, 12));
 
-        getSummaryList(list1, list2);
+        //getSummaryList(list1, list2);
          getMiddle(list3);
     }
 //    Даны два ArrayList, элементы которых упорядочены. Объединить их в трерий ArrayList, элементы которого тоже должны быть отсортированы.
@@ -71,8 +71,8 @@ public class HW_03_03_23 {
         Iterator<Integer> firstFlag = list3.iterator();
         Iterator<Integer> secondFlag = list3.iterator();
         firstFlag.next();
-        secondFlag.next();
-        int a = 0;
+        int a =secondFlag.next();
+        
         while (firstFlag.hasNext()) {
 
             firstFlag.next();
