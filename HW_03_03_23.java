@@ -8,7 +8,7 @@ public class HW_03_03_23 {
         ArrayList<Integer> list2 = new ArrayList<>(List.of(1, 3, 4));
         ArrayList<Integer> list3 = new ArrayList<>(List.of(1, 2, 4, 6, 7, 47, 53, 3, 12));
 
-        //getSummaryList(list1, list2);
+        getSummaryList(list1, list2);
          getMiddle(list3);
     }
 //    Даны два ArrayList, элементы которых упорядочены. Объединить их в трерий ArrayList, элементы которого тоже должны быть отсортированы.
@@ -24,7 +24,7 @@ public class HW_03_03_23 {
 
     public static void getSummaryList(ArrayList list1, ArrayList list2) {
         ArrayList<Integer> listSum = new ArrayList<>();
-//    Input: list1 = [1,2,4], list2 = [1,3,4]
+
         Iterator<Integer> list1It = list1.iterator();
         Iterator<Integer> list2It = list2.iterator();
         int first = list1It.next();
@@ -72,7 +72,7 @@ public class HW_03_03_23 {
         Iterator<Integer> secondFlag = list3.iterator();
         firstFlag.next();
         int a =secondFlag.next();
-        
+
         while (firstFlag.hasNext()) {
 
             firstFlag.next();
